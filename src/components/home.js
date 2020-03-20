@@ -20,7 +20,7 @@ images[1] = '../assets/images/niveahd2.jpg'
 images[2] = '../assets/images/dove 7.jpg'
 
 
-// let wrap = document.querySelector('#wrapper')
+// let wrap = document.querySelector('#wrapper')//ppppp
 
 function changeImg() {
     slideImg.src = images[i]
