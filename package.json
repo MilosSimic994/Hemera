@@ -31,6 +31,6 @@
     "url": ""
   },
   "dependencies": {
-    "copy-webpack-plugin": "^5.0.4"
+    "copy-webpack-plugin": "^5.1.1"
   }
 }
