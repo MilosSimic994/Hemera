@@ -41,22 +41,22 @@ aboutP4.innerText =
  Rhoncus aenean vel elit scelerisque mauris. Pulvinar elementum integer enim neque volutpat ac tincidunt. 
  Lacus luctus accumsan tortor posuere ac ut consequat. Sagittis nisl rhoncus mattis rhoncus urna neque.
  Rhoncus aenean vel elit scelerisque mauris. Pulvinar elementum integer enim neque volutpat ac tincidunt. Lacus luctus accumsan tortor posuere ac ut consequat. Sagittis nisl rhoncus mattis rhoncus urna neque.
- Rhoncus aenean vel elit scelerisque mauris. Pulvinar elementum integer enim neque volutpat ac tincidunt.
- 
+ Rhoncus aenean vel elit scelerisque mauris. Pulvinar elementum integer enim neque volutpat ac tincidunt.`
+ let aboutP5 = document.createElement('p')
+aboutP5.innerText =`
   Lacus luctus accumsan tortor posuere ac ut consequat. Sagittis nisl rhoncus mattis rhoncus urna neque.
  Rhoncus aenean vel elit scelerisque mauris. Pulvinar elementum integer enim neque volutpat ac tincidunt. Lacus luctus accumsan tortor posuere ac ut consequat. Sagittis nisl rhoncus mattis rhoncus urna neque.
  Rhoncus aenean vel elit scelerisque mauris. Pulvinar elementum integer enim neque volutpat ac tincidunt. Lacus luctus accumsan tortor posuere ac ut consequat. Sagittis nisl rhoncus mattis rhoncus urna neque.
  Rhoncus aenean vel elit scelerisque mauris. Pulvinar elementum integer enim neque volutpat ac tincidunt. Lacus luctus accumsan tortor posuere ac ut consequat. Sagittis nisl rhoncus mattis rhoncus urna neque.
  Rhoncus aenean vel elit scelerisque mauris. Pulvinar elementum integer enim neque volutpat ac tincidunt. Lacus luctus accumsan tortor posuere ac ut consequat. Sagittis nisl rhoncus mattis rhoncus urna neque.
- Rhoncus aenean vel elit scelerisque mauris. Pulvinar elementum integer enim neque volutpat ac tincidunt. 
+ Rhoncus aenean vel elit scelerisque mauris. Pulvinar elementum integer enim neque volutpat ac tincidunt. `
 
- Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
+ 
 
 
  
 
-aboutSec.append(aboutTitle, aboutP3,imgDiv, aboutP4) 
+aboutSec.append(aboutTitle, aboutP3,imgDiv, aboutP4,aboutP5) 
 
 
 export {aboutSec}

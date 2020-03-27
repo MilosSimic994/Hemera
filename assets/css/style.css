@@ -26,7 +26,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgb(206, 205, 196);
+  /* background: rgb(206, 205, 196); */
   position: fixed;
   top: 0;
   z-index: 20;
@@ -37,38 +37,60 @@ header {
   width: 5rem;
   height: 5rem;
 }
-
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 100vw;
+  margin-top: 7rem;
+background-color:rgba(80, 57, 184,0.7);
+}
 .nav-list {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   list-style: none;
   margin-right: 2rem;
+  display: none;
 }
 
 .nav-list a {
   text-decoration: none;
   padding: 0.5rem 1rem ;
-  color:rgba(80, 57, 184,0.7);
+  color:rgba(255, 247, 247, 0.2);
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 3rem;
+  
 }
 
 .nav-list a:hover,
 .nav-list a:active {
   border-radius: 20px;
-  border-bottom: 4px solid rgba(80, 57, 184,0.7);
+  border-bottom: 4px solid rgb(255, 247, 247);
+  color: rgb(255, 247, 247);
 }
+.menu {
+  color: rgba(80, 57, 184,0.7);
+  margin-right: 5rem;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+.menu:hover {
+  cursor: pointer;
+}
+
 /* FOOTER */
 footer {
   width: 100%;
-  height: 8rem;
-  background-color: rgb(206, 205, 196);
+  height: 20rem;
+  background-color: rgba(80, 57, 184,0.7);
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding-top: 3rem;
+  padding: 10rem;
 }
 
 .footer-contact {
@@ -78,12 +100,15 @@ footer {
 }
 .footer-contact p {
   padding-bottom: 1rem;
-  color:  rgba(80, 57, 184,0.7);
-  font-size: 1.3rem;
+  color:  rgb(255, 247, 247);
+  font-size: 2rem;
   font-weight: 600;
 }
 footer div {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3rem;
 }
 
 footer img {
@@ -100,7 +125,7 @@ main {
   align-items: center;
 }
 .slide-div img {
-  margin-top: 5rem;
+  margin-top: 7rem;
   width: 70vw;
   height: 60vh;
 }
@@ -121,20 +146,9 @@ main {
   color: beige;
   text-align: left;
   padding: 1rem;
-  font-size: 1.3rem;
+  font-size: 2rem;
   border-radius: 20px 20px 0 0;
 }
-/* .fix-div{
-  margin: 0rem 0;
-    width: 70vw;
-    height: 100vh;
-    background: url('../images/dove.jpg') no-repeat center;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    border-radius: 20px;
-    box-shadow: gray 4px 4px 4px;
-} */
 
 .cards-sec {
   margin: 1rem 0 10rem 0;
@@ -190,8 +204,11 @@ z-index: -21;
 .about-section p {
   font-size: 1.3rem;
   font-weight: 600;
+  padding-left: 4rem;
   margin: 2rem 0 ;
   text-align: left;
+  color:  rgba(80, 57, 184,0.7);
+  border-left: 6px solid rgba(80, 57, 184,0.7);;
 }
 .about-section p::first-letter {
   padding-left: 1rem;
@@ -207,8 +224,25 @@ z-index: -21;
   text-decoration: underline;
 }
 
-.about-section p {
-  color:  rgba(80, 57, 184,0.7);
+
+
+/* PRODUCTS */
+
+.articles-div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 7rem;
+  padding: 3rem;
+
+}
+.articles-div div {
+  margin: 3rem
+
+}
+.articles-div img {
+  width: 15rem;
+  height: 18rem;
 }
 
 /* CONTACTS */
@@ -260,6 +294,8 @@ z-index: -21;
 }
 .right-contact a {
   text-align: left;
+  margin: 0;
+  font-size: 1.7rem;
 }
 .right-contact img {
   width: 2rem;
@@ -270,6 +306,5 @@ z-index: -21;
 #insta-div{
   display: flex;
 flex-direction: row;
-align-items: center;
-}
+align-items: center;}
 

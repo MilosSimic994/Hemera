@@ -2,6 +2,7 @@ import {main} from './home'
 import { footer } from './footer';
 import { aboutSec } from './about';
 import {render} from './products'
+import {holderContact} from './contacts'
 
 let wrp = document.querySelector('.wrapper')
 
@@ -52,8 +53,11 @@ navList.append(aNavHome, aNavAbout, aNavProducts, aNavContact)
 
 nav.append(navList)
 
+let menu = document.createElement('h3')
+menu.className = 'menu'
+menu.innerText = 'Meni'
 
- header.append(logo,nav)
+ header.append(logo, menu)
 
  aNavHome.addEventListener('click', ()=>{
      wrp.innerHTML = ''
@@ -67,7 +71,22 @@ aNavAbout.addEventListener('click', ()=>{
 
 aNavProducts.addEventListener('click', ()=>{
     wrp.innerHTML = ''
-    wrp.innerHTML = render()
+    wrp.append(header, render(), footer)
+})
+
+aNavContact.addEventListener('click', ()=>{
+    wrp.innerHTML = ''
+    wrp.append(header, holderContact)
+})
+
+logo.addEventListener('click', ()=>{
+    wrp.innerHTML = '';
+    wrp.append(header,main, footer)
+})
+menu.addEventListener('click', ()=>{
+    wrp.innerHTML = ''
+    navList.style.display = 'flex'
+    wrp.append(header, nav)
 })
 
 
