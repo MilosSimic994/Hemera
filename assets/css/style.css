@@ -108,15 +108,23 @@ footer {
 footer div {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 3rem;
+ 
 }
-
+.soc-div div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: ivory; */
+  border-radius: 50%;
+  margin: 2rem;
+  padding: 1.4rem;
+  cursor: pointer;
+}
 footer img {
-  margin-right: 3rem;
   width: 4rem;
   height: 4rem;
 }
+
 footer i {
   font-size: 4rem;
 }
@@ -214,6 +222,7 @@ z-index: -21;
   color:  rgba(80, 57, 184,0.7);
   border-left: 6px solid rgba(80, 57, 184,0.7);;
 }
+
 .about-section p::first-letter {
   padding-left: 1rem;
 }

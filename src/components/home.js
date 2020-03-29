@@ -15,7 +15,7 @@ var i = 0;
 var images = [];
 var time = 5000;
 
-images[0] = '../assets/images/persilhd.jpg'
+images[0] = '../assets/images/eucerin2.jpg'
 images[1] = '../assets/images/niveahd2.jpg'
 images[2] = '../assets/images/dove 7.jpg'
 
@@ -88,11 +88,11 @@ let cards = [
         avatar: '../assets/images/blendamed_logo.png',
         title: 'blendamed'
     },
-    {   avatar: '../assets/images/hemera.png',
-        title: 'hemera'
+    {   avatar: '../assets/images/Perwoll_Logo.png',
+        title: 'perwoll'
     },
-    {   avatar: '../assets/images/hemera.png',
-        title: 'hemera'
+    {   avatar: '../assets/images/dermomed.png',
+        title: 'dermomed'
     }
 ]
 let  cardsSec = document.createElement('section')

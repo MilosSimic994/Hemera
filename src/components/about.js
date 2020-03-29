@@ -13,6 +13,7 @@ aboutP.innerText =
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat`
 
 let aboutP2 = document.createElement('p')
+aboutP2.className = 'about-desc'
 aboutP2.innerText =
 `Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
@@ -24,18 +25,10 @@ aboutP3.innerText =
  Lacus luctus accumsan tortor posuere ac ut consequat. Sagittis nisl rhoncus mattis rhoncus urna neque.
  Rhoncus aenean vel elit scelerisque mauris. Pulvinar elementum integer enim neque volutpat ac tincidunt. Lacus luctus accumsan tortor posuere ac ut consequat. Sagittis nisl rhoncus mattis rhoncus urna neque.
  Rhoncus aenean vel elit scelerisque mauris. Pulvinar elementum integer enim neque volutpat ac tincidunt.
- 
-  Lacus luctus accumsan tortor posuere ac ut consequat. Sagittis nisl rhoncus mattis rhoncus urna neque.
- Rhoncus aenean vel elit scelerisque mauris. Pulvinar elementum integer enim neque volutpat ac tincidunt. Lacus luctus accumsan tortor posuere ac ut consequat. Sagittis nisl rhoncus mattis rhoncus urna neque.
- Rhoncus aenean vel elit scelerisque mauris. Pulvinar elementum integer enim neque volutpat ac tincidunt. Lacus luctus accumsan tortor posuere ac ut consequat. Sagittis nisl rhoncus mattis rhoncus urna neque.
- Rhoncus aenean vel elit scelerisque mauris. Pulvinar elementum integer enim neque volutpat ac tincidunt. Lacus luctus accumsan tortor posuere ac ut consequat. Sagittis nisl rhoncus mattis rhoncus urna neque.
- Rhoncus aenean vel elit scelerisque mauris. Pulvinar elementum integer enim neque volutpat ac tincidunt. Lacus luctus accumsan tortor posuere ac ut consequat. Sagittis nisl rhoncus mattis rhoncus urna neque.
- Rhoncus aenean vel elit scelerisque mauris. Pulvinar elementum integer enim neque volutpat ac tincidunt. 
+`
 
- Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
-
-let aboutP4 = document.createElement('p')
+let aboutP4 = document.createElement('p');
+aboutP4.className = 'about-desc'
 aboutP4.innerText =
  `Lacus luctus accumsan tortor posuere ac ut consequat. Sagittis nisl rhoncus mattis rhoncus urna neque.
  Rhoncus aenean vel elit scelerisque mauris. Pulvinar elementum integer enim neque volutpat ac tincidunt. 
@@ -56,7 +49,7 @@ aboutP5.innerText =`
 
  
 
-aboutSec.append(aboutTitle, aboutP3,imgDiv, aboutP4,aboutP5) 
+aboutSec.append(aboutTitle, aboutP, aboutP2, aboutP3,imgDiv, aboutP4,aboutP5) 
 
 
 export {aboutSec}
