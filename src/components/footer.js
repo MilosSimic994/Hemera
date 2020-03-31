@@ -1,3 +1,6 @@
+import {holderContact} from './contacts'
+
+let wrp = document.querySelector('.wrapper')
 
 let footer = document.createElement('footer');
 let socDiv = document.createElement('div');
@@ -25,5 +28,15 @@ phoneDiv.append(phoneImg);
 socDiv.append(instaDiv, mailDiv, phoneDiv)
 
 footer.appendChild(socDiv)
+
+mailDiv.addEventListener('click', ()=>{
+    wrp.innerHTML = ''
+    wrp.append(holderContact);
+})
+phoneDiv.addEventListener('click', ()=>{
+    wrp.innerHTML = ''
+    wrp.append(holderContact);
+})
+
 
 export {footer}

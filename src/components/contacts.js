@@ -2,18 +2,33 @@ let holderContact = document.createElement("div");
 holderContact.className = "holder-contact";
 let holderTitle = document.createElement('h1')
 holderTitle.className = 'holder-title'
-holderTitle.innerText = 'KONTAKT'
+holderTitle.innerText = 'MOZETE NAS NACI OVDE:'
 
 let leftDiv = document.createElement("div");
 leftDiv.className = "left-contact";
 
 let contactTitle = document.createElement("h2");
-contactTitle.innerText = "kontakt";
+contactTitle.innerText = "kontakt:";
 
-leftDiv.appendChild(contactTitle);
+let contactTxt = document.createElement('p');
+contactTxt.className = 'contact-txt'
+contactTxt.innerText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat`
+
+leftDiv.append(contactTitle, contactTxt);
 
 let rightDiv = document.createElement("div");
 rightDiv.className = "right-contact";
+
+let rightAdress = document.createElement('div');
+rightAdress.className = 'right-adress';
+
+let adresSub = document.createElement('p');
+adresSub.innerText = 'Adress:';
+let adressTxt = document.createElement('p');
+adressTxt.innerText = 'DR Ivana Ribara, 127';
+
+rightAdress.append(adresSub, adressTxt);
 
 let rightMail = document.createElement("div");
 rightMail.className = 'right-mail'
@@ -50,7 +65,7 @@ instaLink.appendChild(instaImg);
 
 instaDiv.append(instaLink, instaName)
 
-rightDiv.append(rightMail, rightNumber, instaDiv, mapDiv);
+rightDiv.append(rightAdress,rightMail, rightNumber, instaDiv);
 
 holderContact.append(holderTitle);
 
@@ -65,11 +80,5 @@ holderTitle.addEventListener('mouseenter', ()=>{
 // })
 
 
-let mapDiv = document.createElement('div')
-mapDiv.innerHTML = `<div class="mapouter">
-<div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=doktora%20ivana%20ribara%20127&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-</iframe><a href="https://www.embedgooglemap.org">embedgooglemap.org</a></div>
-<style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>`
-
-
 export { holderContact };
+

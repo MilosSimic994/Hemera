@@ -200,7 +200,6 @@ main {
   width: 70vw;
   margin: 0;
   padding: 0;
-
 }
 
 .about-img_div {
@@ -213,14 +212,25 @@ filter: grayscale(70);
 z-index: -21;
 }
 
-.about-section p {
+.desc-left {
   font-size: 1.3rem;
   font-weight: 600;
-  padding-left: 4rem;
-  margin: 2rem 0 ;
+  padding-left: 2rem;
+  margin: 4rem 20rem 4rem 0 ;
   text-align: left;
   color:  rgba(80, 57, 184,0.7);
   border-left: 6px solid rgba(80, 57, 184,0.7);;
+}
+.desc-right {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-right: 2rem;
+  margin: 4rem 0 4rem 20rem ;
+  text-align: right;
+  background-color: rgba(80, 57, 184,0.1);;
+  color:  rgba(80, 57, 184,0.7);
+  border-right: 6px solid rgba(80, 57, 184,0.7);
+  border-radius: 10px 0 0 10px;
 }
 
 .about-section p::first-letter {
@@ -236,7 +246,6 @@ z-index: -21;
   color: rgba(80, 57, 184,0.7);
   text-decoration: underline;
 }
-
 
 
 /* PRODUCTS */
@@ -275,18 +284,24 @@ z-index: -21;
 }
 
 .left-contact {
-  width: 38%;
+  width: 100%;
   height: 70vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: rgba(80, 57, 184,0.7);
   text-transform: uppercase;
   font-size: 2.3rem;
-  /* border: 2px solid  rgba(80, 57, 184,0.7);
-  border-radius: 20px 0 0 20px; */
+  
 }
+.contact-txt {
+  font-size: 1rem;
+  background-color: rgba(80, 57, 184,0.1);
+  text-transform: capitalize;
+  padding: 1.3rem 2.5rem;
 
+}
 .right-contact {
   width: 58%;
   height: 70vh;
