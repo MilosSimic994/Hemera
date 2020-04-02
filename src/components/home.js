@@ -56,11 +56,8 @@ let aboutP2 = document.createElement('p')
 aboutP2.innerText = `Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
 
-let aboutP3 = document.createElement('p')
-aboutP3.innerText = `Lacus luctus accumsan tortor posuere ac ut consequat. Sagittis nisl rhoncus mattis rhoncus urna neque.
- Rhoncus aenean vel elit scelerisque mauris. Pulvinar elementum integer enim neque volutpat ac tincidunt. `
 
-aboutDiv.append(aboutP,aboutP2,aboutP3) 
+aboutDiv.append(aboutP,aboutP2) 
 
 //FIX DIV
 //  let fixDiv = document.createElement('div')

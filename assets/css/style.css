@@ -158,7 +158,7 @@ main {
   color: beige;
   text-align: left;
   padding: 1rem;
-  font-size: 2rem;
+  font-size: 1rem;
   border-radius: 20px 20px 0 0;
 }
 
@@ -176,7 +176,7 @@ main {
   display: flex;
   flex-direction: column;
   margin: 1rem 1rem;
-  padding: 3rem;
+  padding: 2rem 1rem;
   background: rgba(80, 57, 184,0.15);
   border-radius: 20px;
   color: rgba(80, 57, 184,0.7);
@@ -185,8 +185,8 @@ main {
   
 }
 .article-card img {
-    width: 10rem;
-    height: 8rem;
+    width: 7rem;
+    height: 7rem;
     margin-bottom: 1.5rem;
 }
 
@@ -196,7 +196,7 @@ main {
 .about-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   width: 70vw;
   margin: 0;
   padding: 0;
@@ -213,10 +213,11 @@ z-index: -21;
 }
 
 .desc-left {
+  width: 65vw;
   font-size: 1.3rem;
   font-weight: 600;
   padding-left: 2rem;
-  margin: 4rem 20rem 4rem 0 ;
+  margin: 4rem 0 ;
   text-align: left;
   color:  rgba(80, 57, 184,0.7);
   border-left: 6px solid rgba(80, 57, 184,0.7);;
@@ -225,7 +226,7 @@ z-index: -21;
   font-size: 1.3rem;
   font-weight: 600;
   padding-right: 2rem;
-  margin: 4rem 0 4rem 20rem ;
+  margin: 4rem 0 ;
   text-align: right;
   background-color: rgba(80, 57, 184,0.1);;
   color:  rgba(80, 57, 184,0.7);
@@ -259,12 +260,22 @@ z-index: -21;
 
 }
 .articles-div div {
-  margin: 3rem
-
+  margin: 1.6rem;
+  font-size: 0.6rem;
+  padding: 0.5rem;
+  width: 8rem;
 }
+
+.articles-div div:hover{
+  box-shadow: gray 5px 5px 5px 5px;
+  font-weight: 700;
+}
+
+
 .articles-div img {
-  width: 15rem;
-  height: 18rem;
+  width: 6rem;
+  height: 6rem;
+  margin: 1.3rem 0;
 }
 
 /* CONTACTS */
